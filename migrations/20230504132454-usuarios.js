@@ -3,48 +3,35 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('emprestimos', {
+    return queryInterface.createTable('usuarios', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        primaryKey: true,
         autoIncrement: true,
+        primaryKey: true,
       },
-      
-      livro: {
+
+      login: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      autor: {
+
+      senha: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      tombo: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      aluno: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      turma: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      serie: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
+
       createdAt: {
         type: Sequelize.DATE,
       },
+
       updatedAt: {
         type: Sequelize.DATE,
-      }
+      },
     });
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('emprestimos')
+    return queryInterface.dropTable('usuarios')
   }
 };
