@@ -18,7 +18,7 @@ module.exports = {
 
         await Usuario.findOne({where: {login: login}}).then((usuario)=>{
             if(senha == usuario.senha){
-                res.redirect('/')
+                res.redirect('/bibliotech')
             }else{
                 return res.send('Senha incorreta')
             }
