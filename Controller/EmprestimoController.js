@@ -1,4 +1,4 @@
-const Teste = require('../models/Teste')
+const Emprestimo = require('../models/Emprestimo')
 
 module.exports = {
     async store(req, res){
@@ -9,11 +9,11 @@ module.exports = {
         const turma = req.body.turma;
         const serie = req.body.serie;
 
-        await Teste.create({livro, autor, tombo, aluno, turma, serie, data})
+        await Emprestimo.create({livro, autor, tombo, aluno, turma, serie, data})
     },
 
     async index(req, res){
-        const busca = await Teste.findAll()
+        const busca = await Emprestimo.findAll()
         return res.json(busca)
     }
 }

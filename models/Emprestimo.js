@@ -1,7 +1,7 @@
 const {DataTypes} = require('sequelize')
 const sequelize = require('../config/sequelize')
 
-const Teste = sequelize.define('testes', {
+const Emprestimo = sequelize.define('testes', {
     livro: DataTypes.STRING,
     autor: DataTypes.STRING,
     tombo: DataTypes.INTEGER,
@@ -10,4 +10,4 @@ const Teste = sequelize.define('testes', {
     serie: DataTypes.INTEGER,
 })
 
-module.exports = Teste;
+module.exports = Emprestimo;
