@@ -12,6 +12,10 @@ module.exports = {
         return res.json(busca)
     },
 
+    async update(req, res){
+
+    },
+
     async login(req, res){
         const login = req.body.login;
         const senha = req.body.senha;

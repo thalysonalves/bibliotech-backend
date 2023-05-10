@@ -3,6 +3,9 @@ const EmprestimoController = require('./Controller/EmprestimoController')
 const UsuarioController = require('./Controller/UsuarioController')
 const router = express.Router()
 
+// Rotas de livros
+    
+
 
 // Rotas de empréstimo
     router.get('/bibliotech', EmprestimoController.index)
