@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npx nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "drop-mg": "sequelize db:migrate:undo --name",
+    "mg": "sequelize db:migrate",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",

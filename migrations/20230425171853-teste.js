@@ -39,6 +39,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      data_real:{
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       status:{
         type: Sequelize.BOOLEAN,
         allowNull: false,

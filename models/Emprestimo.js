@@ -11,6 +11,7 @@ const Emprestimo = sequelize.define('emprestimos', {
     turma: DataTypes.STRING,
     serie: DataTypes.INTEGER,
     data: DataTypes.STRING,
+    data_real: DataTypes.STRING,
     status: DataTypes.BOOLEAN
 })
 
